@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+button,
+li {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  padding: 0 40px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+}
+
+.navbar .burger {
+  display: none;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.navbar .logo h3 {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+.nav-links {
+  display: flex;
+  gap: 60px;
+}
+.nav-links li {
+  font-size: 14px;
+}
+.nav-links li:hover {
+  color: blue;
+  cursor: pointer;
+}
+#sign-btn {
+  width: 100px;
+  height: 40px;
+  border: 0.5px solid gray;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#sign-btn:hover {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+/* ------{ Hero Section }------ */
+
+.home {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
+  padding: 20px;
+  /* height: 100vh; */
+}
+.clap-img {
+  width: 50%;
+  display: block;
+}
+.clap-img img {
+  width: 95%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+}
+.clap-img img:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 5);
+}
+.film-para {
+  width: 50%;
+  /* padding-left: 0px; */
+}
+.film-para p {
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 1px;
+  /* text-align: center; */
+  padding: 10px;
+}
+.film-para span {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+blockquote {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+/* ------{ Accordin section }------ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.container h3 {
+  font-size: 4em;
+  /* font-weight: bold; */
+}
+.accordion {
+  width: 100%;
+}
+.accordion .contentBx {
+  width: 70%;
+  position: relative;
+  margin: 10px auto;
+}
+.accordion .contentBx .label {
+  position: relative;
+  padding: 20px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+.accordion .contentBx .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+}
+.accordion .contentBx.active .label::before {
+  content: "-";
+}
+.content {
+  position: relative;
+  background-color: gray;
+  color: white;
+  font-size: 1rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+.accordion .contentBx.active .content {
+  height: auto;
+  padding: 10px;
+}
+
+/* ------{ Footer Section }------ */
+
+.footer {
+  background-color: orange;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  /* height: 55vh; */
+}
+.footer-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5em;
+  padding: 20px;
+}
+.footer-courses li {
+  list-style-type: disc;
+}
+.footer-courses ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.footer-courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-about ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+.footer-about ul li:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.social-media {
+  display: flex;
+  gap: 1em;
+}
+a:hover {
+  color: blue;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
